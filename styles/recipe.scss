@@ -1,0 +1,79 @@
+/** Recipe and video recipe **/
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(calc(var(--columns)), 1fr);
+  grid-template-rows: auto;
+  h2 {
+    color: var(--color-mid-grey);
+  }
+}
+
+.ingredients-section {
+  grid-column: span 4;
+  gap: var(--spacing);
+  @media (width < 768px) {
+    grid-column: span 12;
+  }
+  > div {
+    margin-bottom: var(--vertical-space);
+  }
+  li {
+    display: flex;
+    gap: calc(var(--spacing) * 3);
+    p {
+      color: var(--color-grey);
+    }
+    .h3 {
+      color: var(--color-beige);
+    }
+  }
+  b {
+    font-weight: 700;
+    margin-bottom: var(--spacing);
+  }
+}
+
+.method-section {
+  grid-column: span 8;
+  @media (width < 768px) {
+    grid-column: span 12;
+  }
+  p {
+    margin-bottom: var(--spacing);
+  }
+  h2 {
+    margin-bottom: var(--vertical-space);
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: var(--transition-time-long) ease;
+  background-color: rgba(247, 241, 235, 0.5);
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid var(--color-white);
+  border-bottom: 25px solid transparent;
+}
+
+.image:hover .video-overlay {
+  opacity: 100%;
+}

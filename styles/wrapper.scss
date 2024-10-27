@@ -1,0 +1,34 @@
+.wrapper {
+  /* Notum grid hér til að setja upp bil á milli header, meginmáls og fóts */
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  /* grid items eru miðjuð */
+  justify-items: center;
+  gap: var(--vertical-space);
+  width: 100%;
+  min-height: 100vh;
+  .wrapper-content {
+    width: var(--width-offset);
+    max-width: var(--max-width);
+    gap: var(--gutter);
+  }
+  .wrapper-nav {
+    position: sticky;
+    top: 0;
+    margin-bottom: var(--spacing);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-white);
+    z-index: 99999;
+    @media (width < 768px) {
+      position: relative;
+    }
+  }
+}
+
+.wrapper-main {
+  justify-items: center;
+}

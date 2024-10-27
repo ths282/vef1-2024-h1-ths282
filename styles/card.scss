@@ -1,0 +1,34 @@
+/** Card **/
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .image {
+    width: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+  .content {
+    display: flex;
+    gap: var(--spacing);
+    padding: calc(var(--spacing) / 2);
+    background-color: var(--color-white);
+    justify-content: space-between;
+  }
+  .actions {
+    display: flex;
+    gap: var(--spacing);
+    margin-top: var(--spacing);
+  }
+  .button {
+    border: none;
+  }
+  @media (width >= 768px) {
+    grid-column: span 4;
+  }
+}

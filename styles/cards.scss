@@ -1,0 +1,24 @@
+/** Cards **/
+.cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+  justify-items: center;
+  width: 100%;
+  .heading {
+    width: 100%;
+    text-align: center;
+  }
+  .content {
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--vertical-space);
+    justify-items: center;
+    width: 100%;
+
+    @media (width >= 700px) {
+      grid-template-columns: repeat(calc(var(--columns)), 1fr);
+      grid-template-rows: auto;
+    }
+  }
+}

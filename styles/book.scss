@@ -1,0 +1,28 @@
+/** Book section **/
+.book-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--spacing);
+  background-color: var(--color-cream);
+  height: 100%;
+  .content {
+    width: 50%;
+    gap: var(--spacing);
+    flex-direction: column;
+  }
+}
+
+.foreground-image {
+  max-width: var(--max-width-image);
+}
+
+@media (width < 768px) {
+  .book-section {
+    flex-direction: column;
+    align-items: center;
+    .foreground-image {
+      justify-content: center;
+    }
+  }
+}

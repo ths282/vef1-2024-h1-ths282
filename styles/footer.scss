@@ -1,0 +1,27 @@
+/** Fótur **/
+footer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  padding-top: var(--spacing);
+  padding-bottom: var(--spacing);
+  border-top: 2px solid var(--color-light-grey);
+  width: 100%;
+  text-align: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--vertical-space);
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--vertical-space);
+  }
+  .subtitle {
+    font-weight: 300;
+  }
+}

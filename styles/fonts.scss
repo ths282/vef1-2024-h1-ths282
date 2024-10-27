@@ -1,0 +1,24 @@
+/** Letur og stærðir **/
+
+html {
+  background-color: var(--color-background-primary);
+  font-size: var(--font-size-base);
+}
+
+/*** Leturgerðir sem við sækjum úr fonts/ möppu ***/
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf")
+    format("woff2");
+}
