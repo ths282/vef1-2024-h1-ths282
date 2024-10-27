@@ -1,0 +1,14 @@
+{
+  "name": "h1",
+  "version": "1.0.0",
+  "description": "Hópverkefni 1 í vefforritun",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  }
+}
